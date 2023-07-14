@@ -8,7 +8,7 @@ html {
     font-size: 62.5%;
     font-family: 'inter';
     font-size: 1rem;
-    color:#495057;
+    color:#212529;
 }
 
 
@@ -85,4 +85,50 @@ display: flex;
 
 .url-button-container{
     display: flex;
+}
+
+
+.main-header{
+    height:82vh;
+    position: relative;
+    /* background-color: aquamarine; */
+}
+
+.main-heading-primary{
+    position: absolute;
+    font-size: 3rem;
+    left:50%;
+    top:32%;
+    transform:translate(-50%,-50%);
+    font-size:3.4rem;
+    text-align: center;
+}
+
+.main-heading{
+    display: block;
+}
+
+.main-heading-1{
+    display: block;
+
+    /* animation-name: text-animation;  */
+	/* animation-duration: 4s; total x-sec from animation */
+	/* animation-delay: 0s; start aniamtion after x-sec */
+	/* animation-iteration-count: 100; play x times */
+	/* animation-timing-function: ease-out; cubic-bezier(custom) */
+}
+
+@keyframes text-animation {
+    0%{
+		opacity: 1;
+		transform: translateY(0px);
+		/* transform: rotate(120deg)*/
+	}
+
+
+	100%{
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+    
 }
