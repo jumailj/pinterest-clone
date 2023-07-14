@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'inter';
+    font-size: 1rem;
+    color:#495057;
+}
+
+
+.navigation-bar{
+    /* background-color: aquamarine; */
+    height: 5rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo{
+    width: 0.2rem;
+    margin-left: 2rem;
+}
+
+.nav-urls{
+display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-urls:last-child{
+
+ /* gap:0.1rem; */
+}
+
+
+
+.url-fonts{
+    font-size: 1.0rem; 
+    font-weight: 500;
+    text-decoration: none;
+    color:#212529;
+}
+.url-fonts:hover{
+    text-decoration: underline;
+}
+
+.url-button{
+    font-size:1.0rem;
+    font-weight: 500;
+    text-decoration: none;
+    color:#212529;
+
+    background-color: red;
+
+    padding: 0.65rem 0.75rem;
+    border-radius: 3rem;
+}
+
+.login-text{
+    color:#f8f9fa;
+}
+
+.url-button:last-child{
+    /*sign up button*/
+    margin-right: 1.5rem;
+    background-color: #f1f3f5
+}
+
+.url-button:nth-last-child(2){
+    /*logoin button*/
+    margin-right:-1.5rem;
+    
+    
+}
+.url-button:nth-last-child(2):hover{
+    background-color: #c92a2a;
+}
+.url-button:last-child:hover{
+    background-color: #dee2e6
+}
+
+.url-button-container{
+    display: flex;
+}
