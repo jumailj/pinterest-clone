@@ -5,51 +5,43 @@
 // outfit idea
 // chai time snacks idea
 
-let text = document.querySelector('.main-heading-1'); //.textContent="hello guyz";
+let text = document.querySelector('.main-heading-sub'); //.textContent="hello guyz";
+const bulletButtons = document.querySelectorAll('.bullets');
 text.style.color="#339af0"; 
 
 const notes = [ 'home décor idea', 'DIY idea','outfit idea' , 'chai time snacks idea']; 
 const colors = ['#339af0', '#20c997', '#ff922b', '#ff6b6b'];
-let delay = 4000; // in seconds
-
-const newspaperSpinning = [
-    { transform: "translateY(8px)" , opacity: "1" },
-    { transform: "translateY(-10px) " , opacity: "0.8"},
-    {opacity: "0"}
-  ];
-  
-  const newspaperTiming = {
-    duration: delay,
-    iterations: 1,
-  };
+let delay = 3000; // in seconds
 
 
 
-text.animate(newspaperSpinning,newspaperTiming);
-//document.getElementById("p2").style.color = "blue";
+bulletButtons.forEach(el=>{
+  el.addEventListener("click",function(){
+    console.log("hello world");
+    
+  } )
+})
 
+console.log(bulletButtons);
 
-  //newspaper.animate(newspaperSpinning, newspaperTiming);
-
-let i = 1;
+let i = 0;
 function sayHi() {
-   // console.log('hello world');
+ 
+   //reseting all previous bullet to grey;
+   for(let j = 0; j<=3; j++) {
+    bulletButtons[j].style.backgroundColor= '#dee2e6';
+   }
+
+    text.style.animation= "text-animation 3s infinite cubic-bezier(0.1, 0.3, 1.0, 0.2)";
     text.textContent= notes[i];
     text.style.color= colors[i];
-    text.animate(newspaperSpinning,newspaperTiming);
-
-    console.log('  i  = ' + i);
+    bulletButtons[i].style.backgroundColor  = colors[i];
+   
     i++;
     if (i > 3) {
         i = 0;
     }
-
-
-  // text.className.add('text-animation');
 }
 setInterval(sayHi, delay);
 let intervalId = setInterval(sayHi, delay);
 clearInterval(intervalId);
-
-
-//setInterval(sayHi, 1000);
