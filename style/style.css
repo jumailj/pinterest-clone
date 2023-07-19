@@ -272,10 +272,10 @@ display: flex;
 
 .section-3-image{
     width: 50%;
-	height: 97vh;                        /*79 percentage of actual window*/
-	background-image: url('./../resource/girl.png');   /*image url*/
-	background-size: cover;              /*try to fit image inside the box*/
-	background-position: top;            /*start sacling from top*/
+	height: 97vh;               
+	background-image: url('./../resource/girl.png');  
+	background-size: cover;         
+	background-position: top;           
 }
 
 .section-3-right{
@@ -288,6 +288,28 @@ display: flex;
 
 .section-3-color{
     color: rgb(255,227,234);
+}
+
+
+.section-4{
+    height: 100vh;      
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.305)), url(./../resource/bg-section-4.png);
+
+	background-size: cover;         
+	background-position: top; 
+    /* justify-content: space-between; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.section-4-heading{
+    font-size: 4.6rem;
+    color:#f3f3f3;
+    text-align: left;
 }
 
 @keyframes text-animation {
